@@ -1,0 +1,12 @@
+C:\Repos\CashFlow\src\CashFlow.Communication\bin\Debug\net6.0\CashFlow.Communication.deps.json
+C:\Repos\CashFlow\src\CashFlow.Communication\bin\Debug\net6.0\CashFlow.Communication.dll
+C:\Repos\CashFlow\src\CashFlow.Communication\bin\Debug\net6.0\CashFlow.Communication.pdb
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.AssemblyInfoInputs.cache
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.AssemblyInfo.cs
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.csproj.CoreCompileInputs.cache
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.dll
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\refint\CashFlow.Communication.dll
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.pdb
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\ref\CashFlow.Communication.dll
+C:\Repos\CashFlow\src\CashFlow.Communication\obj\Debug\net6.0\CashFlow.Communication.csproj.AssemblyReference.cache

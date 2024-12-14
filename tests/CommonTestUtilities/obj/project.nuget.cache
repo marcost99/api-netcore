@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DpCV7KL0El36IfnGDPKN8OLAjK7OpxbkZxtuB0/JLe47KndVkMADeHZ59xV6ksn3SyF3Gn6rgkBUBDBmSgf4XQ==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\CashFlow\\tests\\CommonTestUtilities\\CommonTestUtilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tulio\\.nuget\\packages\\bogus\\35.6.1\\bogus.35.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CommonTestUtilities.deps.json
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CommonTestUtilities.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CommonTestUtilities.pdb
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Communication.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Communication.pdb
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.csproj.AssemblyReference.cache
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.AssemblyInfoInputs.cache
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.AssemblyInfo.cs
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.csproj.CoreCompileInputs.cache
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.csproj.CopyComplete
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\refint\CommonTestUtilities.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.pdb
+C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\ref\CommonTestUtilities.dll

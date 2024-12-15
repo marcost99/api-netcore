@@ -138,6 +138,9 @@
   <data name="INVALID_PASSWORD" xml:space="preserve">
     <value>A senha não é válida.</value>
   </data>
+  <data name="LOGIN_UNAUTHORIZED" xml:space="preserve">
+    <value>Login não autorizado.</value>
+  </data>
   <data name="NAME_REQUIRED" xml:space="preserve">
     <value>O nome é obrigatório.</value>
   </data>

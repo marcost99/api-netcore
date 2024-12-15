@@ -124,6 +124,15 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Login unauthorized..
+        /// </summary>
+        public static string LOGIN_UNAUTHORIZED {
+            get {
+                return ResourceManager.GetString("LOGIN_UNAUTHORIZED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The name is required..
         /// </summary>
         public static string NAME_REQUIRED {

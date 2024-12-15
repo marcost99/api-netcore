@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N+PDPsazFFs/IQNOvHfJYdSjC427YJEnQz1+r/lMJ8zwCnwxeQiq6Vyw25y372+UOhBLmL4FOywyDGdLjtsfHw==",
+  "dgSpecHash": "RlJQJpC93sdyBN1ho1KthRbcWpRQaWAWbdLzttjSOi/h+3FhuP383jRgUt0re1aG8WXVTVGgGJFo1mmxfwI3sQ==",
   "success": true,
   "projectFilePath": "C:\\Repos\\CashFlow\\src\\CashFlow.Api\\CashFlow.Api.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\tulio\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.1\\microsoft.bcl.timeprovider.8.0.1.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
@@ -30,6 +31,8 @@
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.3.0\\microsoft.identitymodel.abstractions.8.3.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.3.0\\microsoft.identitymodel.jsonwebtokens.8.3.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.identitymodel.logging\\8.3.0\\microsoft.identitymodel.logging.8.3.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.3.0\\microsoft.identitymodel.tokens.8.3.0.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\tulio\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

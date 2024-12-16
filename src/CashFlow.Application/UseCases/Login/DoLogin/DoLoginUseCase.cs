@@ -5,7 +5,7 @@ using CashFlow.Domain.Security.Cryptography;
 using CashFlow.Domain.Security.Tokens;
 using CashFlow.Exception.ExceptionsBase;
 
-namespace CashFlow.Application.UseCases.Login
+namespace CashFlow.Application.UseCases.Login.DoLogin
 {
     public class DoLoginUseCase : IDoLoginUseCase
     {
@@ -22,7 +22,7 @@ namespace CashFlow.Application.UseCases.Login
         {
             var entity = await _repository.GetByEmail(request.Email);
 
-            if(entity == null)
+            if (entity == null)
             {
                 throw new UnauthorizedException();
             }
@@ -34,8 +34,8 @@ namespace CashFlow.Application.UseCases.Login
                 throw new UnauthorizedException();
             }
 
-            return new ResponseRegisteredUserJson() 
-            { 
+            return new ResponseRegisteredUserJson()
+            {
                 Name = entity.Name,
                 Token = _accessTokenGenerator.Generate(entity)
             };

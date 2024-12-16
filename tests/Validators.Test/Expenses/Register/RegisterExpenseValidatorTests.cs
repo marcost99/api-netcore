@@ -1,6 +1,6 @@
 ﻿using CashFlow.Application.UseCases.Expenses;
 using CashFlow.Exception;
-using CommonTestUtilities;
+using CommonTestUtilities.Requests;
 using FluentAssertions; //library that verifies the results of validations
 using Xunit;
 

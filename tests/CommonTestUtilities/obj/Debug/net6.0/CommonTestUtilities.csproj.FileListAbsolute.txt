@@ -13,3 +13,10 @@ C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities
 C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\refint\CommonTestUtilities.dll
 C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\CommonTestUtilities.pdb
 C:\Repos\CashFlow\tests\CommonTestUtilities\obj\Debug\net6.0\ref\CommonTestUtilities.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Application.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Domain.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Exception.dll
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Application.pdb
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Domain.pdb
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\CashFlow.Exception.pdb
+C:\Repos\CashFlow\tests\CommonTestUtilities\bin\Debug\net6.0\pt-BR\CashFlow.Exception.resources.dll

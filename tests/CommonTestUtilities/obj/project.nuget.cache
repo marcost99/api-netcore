@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "DpCV7KL0El36IfnGDPKN8OLAjK7OpxbkZxtuB0/JLe47KndVkMADeHZ59xV6ksn3SyF3Gn6rgkBUBDBmSgf4XQ==",
+  "dgSpecHash": "Ubq53g4fO16C2YplYjEKThXRdqDw8AFEbPTPZ2G1wrzk8qiFEf/my4SaM2+T8/0vUqyvCu3xj/irPHKc0PeOSw==",
   "success": true,
   "projectFilePath": "C:\\Repos\\CashFlow\\tests\\CommonTestUtilities\\CommonTestUtilities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tulio\\.nuget\\packages\\bogus\\35.6.1\\bogus.35.6.1.nupkg.sha512"
+    "C:\\Users\\tulio\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\bogus\\35.6.1\\bogus.35.6.1.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\tulio\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

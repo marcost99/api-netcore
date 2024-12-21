@@ -1,8 +1,8 @@
 ﻿namespace CashFlow.Domain.Security.Cryptography
 {
-    public interface IPasswordEncripter
+    public interface IPasswordEncrypter
     {
         string Encrypty(string password);
-        bool Verifiy(string password, string passwordHash);
+        bool Verify(string password, string passwordHash);
     }
 }

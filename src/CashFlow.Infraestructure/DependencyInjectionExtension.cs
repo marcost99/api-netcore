@@ -20,7 +20,7 @@ namespace CashFlow.Infraestructure
             AddDbContext(services, configuration);
             AddRepository(services);
 
-            services.AddScoped<IPasswordEncripter, Security.Cryptography.BCrypt>();
+            services.AddScoped<IPasswordEncrypter, Security.Cryptography.BCrypt>();
         }
 
         public static void AddToken(IServiceCollection services, IConfiguration configuration)

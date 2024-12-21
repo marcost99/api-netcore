@@ -14,6 +14,12 @@ namespace CommonTestUtilities.Repositories
         { 
             _repository.Setup(userReadOnly => userReadOnly.ExistActiveUserWithEmail(email)).ReturnsAsync(true);
         }
+        public UserReadOnlyRepositoryBuilder GetByEmail(CashFlow.Domain.Entities.User user)
+        {
+            _repository.Setup(userRepository => userRepository.GetByEmail(user.Email)).ReturnsAsync(user);
+            
+            return this;
+        }
         public IUsersReadOnlyRepository Build() => _repository.Object;
     }
 }

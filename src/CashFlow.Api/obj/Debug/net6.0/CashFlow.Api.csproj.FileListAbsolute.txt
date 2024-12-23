@@ -77,3 +77,4 @@ C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\appsettings.Test.json

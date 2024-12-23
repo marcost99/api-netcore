@@ -5,6 +5,7 @@ using CashFlow.Domain.Security.Cryptography;
 using CashFlow.Domain.Security.Tokens;
 using CashFlow.Infraestructure.DataAccess;
 using CashFlow.Infraestructure.DataAccess.Repositories;
+using CashFlow.Infraestructure.Extensions;
 using CashFlow.Infraestructure.Security.Tokens;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,11 +17,14 @@ namespace CashFlow.Infraestructure
     {
         public static void AddInfraestructure(this IServiceCollection services, IConfiguration configuration) 
         {
+            services.AddScoped<IPasswordEncrypter, Security.Cryptography.BCrypt>();
             AddToken(services, configuration);
-            AddDbContext(services, configuration);
             AddRepository(services);
 
-            services.AddScoped<IPasswordEncrypter, Security.Cryptography.BCrypt>();
+            if (configuration.IsTestEnvironment() == false)
+            {
+                AddDbContext(services, configuration);
+            }
         }
 
         public static void AddToken(IServiceCollection services, IConfiguration configuration)

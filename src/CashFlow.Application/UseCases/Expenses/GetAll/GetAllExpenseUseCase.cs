@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CashFlow.Communication.Responses;
 using CashFlow.Domain.Repositories.Expenses;
+using CashFlow.Domain.Services.LoggedUser;
 
 namespace CashFlow.Application.UseCases.Expenses.GetAll
 {
@@ -8,41 +9,25 @@ namespace CashFlow.Application.UseCases.Expenses.GetAll
     {
         private readonly IExpensesReadOnlyRepository _repository;
         private readonly IMapper _mapper;
+        private readonly ILoggedUser _loggedUser;
         
-        public GetAllExpenseUseCase(IExpensesReadOnlyRepository repository, IMapper mapper) 
+        public GetAllExpenseUseCase(IExpensesReadOnlyRepository repository, IMapper mapper, ILoggedUser loggedUser) 
         {
             _repository = repository;
             _mapper = mapper;
+            _loggedUser = loggedUser;
         }
 
         public async Task<ResponseExpensesJson> Execute()
         {
-            var entities = await _repository.GetAll();
+            var loggedUser = await _loggedUser.Get();
+
+            var entities = await _repository.GetAll(loggedUser);
 
             return new ResponseExpensesJson()
             {
                 Expenses = _mapper.Map<List<ResponseShortExpenseJson>>(entities)
             };
-
-            //var response = new ResponseExpensesJson();
-            //entities.ForEach(e =>
-            //{
-            //    response.Expenses.Add
-            //    (
-            //        new ResponseShortExpenseJson() { Id = e.Id, Title = e.Title, Amount = e.Amount }
-            //    );
-            //});
-            //return response;
-
-            //return new ResponseGetAllExpenseJson()
-            //{
-            //    Expenses = 
-            //        new List<GetAllExpense>()
-            //        {
-            //            new GetAllExpense() { Id = 1, Title = "Sapato", Amount = 49 },
-            //            new GetAllExpense() { Id = 2, Title = "Tenis", Amount = 99 },
-            //        }
-            //};
         }
     }
 }

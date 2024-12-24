@@ -18,9 +18,9 @@ namespace CashFlow.Infraestructure.DataAccess.Repositories
             await _dbContext.Expenses.AddAsync(expense);
         }
 
-        public async Task<bool> DeleteById(long id)
+        public async Task<bool> DeleteById(User user, long id)
         {
-            var entity = await _dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id);
+            var entity = await _dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
             
             if (entity == null)
                 return false;
@@ -30,19 +30,19 @@ namespace CashFlow.Infraestructure.DataAccess.Repositories
             return true;
         }
 
-        public async Task<List<Expense>> GetAll()
+        public async Task<List<Expense>> GetAll(User user)
         {
-            return await _dbContext.Expenses.AsNoTracking().ToListAsync();
+            return await _dbContext.Expenses.AsNoTracking().Where(expense => expense.UserId == user.Id).ToListAsync();
         }
 
-        async Task<Expense?> IExpensesReadOnlyRepository.GetById(long id)
+        async Task<Expense?> IExpensesReadOnlyRepository.GetById(User user,long id)
         {
-            return await _dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id);
+            return await _dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
         }
 
-        async Task<Expense?> IExpensesUpdateOnlyRepository.GetById(long id)
+        async Task<Expense?> IExpensesUpdateOnlyRepository.GetById(User user, long id)
         {
-            return await _dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id);
+            return await _dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
         }
 
         public void Update(Expense expense)

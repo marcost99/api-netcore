@@ -8,6 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using CashFlow.Infraestructure.Extensions;
+using CashFlow.Domain.Security.Tokens;
+using CashFlow.Api.Token;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,6 +58,10 @@ builder.Services.AddInfraestructure(builder.Configuration);
 
 // Method of extension to add dependency injection of business rule
 builder.Services.AddApplication();
+
+builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
+
+builder.Services.AddHttpContextAccessor();
 
 // Sets the Authorization with JWT
 var signingKey = builder.Configuration.GetValue<string>("Settings:Jwt:SigningKey");

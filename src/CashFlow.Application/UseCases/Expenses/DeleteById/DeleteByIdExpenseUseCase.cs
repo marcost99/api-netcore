@@ -2,6 +2,7 @@
 using CashFlow.Exception;
 using CashFlow.Domain.Repositories.Expenses;
 using CashFlow.Domain.Repositories;
+using CashFlow.Domain.Services.LoggedUser;
 
 namespace CashFlow.Application.UseCases.Expenses.DeleteById
 {
@@ -9,15 +10,19 @@ namespace CashFlow.Application.UseCases.Expenses.DeleteById
     {
         private readonly IExpensesWriteOnlyRepository _repository;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly ILoggedUser _loggedUser;
 
-        public DeleteByIdExpenseUseCase(IExpensesWriteOnlyRepository repository, IUnitOfWork unitOfWork)
+        public DeleteByIdExpenseUseCase(IExpensesWriteOnlyRepository repository, IUnitOfWork unitOfWork, ILoggedUser loggedUser)
         {
             _repository = repository;
             _unitOfWork = unitOfWork;
+            _loggedUser = loggedUser;
         }
         public async Task Execute(long id)
         {
-            var result = await _repository.DeleteById(id);
+            var loggedUser = await _loggedUser.Get();
+            
+            var result = await _repository.DeleteById(loggedUser, id);
 
             if (result == false)
             {

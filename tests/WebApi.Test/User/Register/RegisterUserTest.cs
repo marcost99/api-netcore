@@ -1,9 +1,12 @@
 ﻿using CashFlow.Exception;
 using CommonTestUtilities.Requests;
 using FluentAssertions;
+using System.Globalization;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
+using WebApi.Test.InlineData;
 using Xunit;
 
 namespace WebApi.Test.User.Register
@@ -36,11 +39,14 @@ namespace WebApi.Test.User.Register
             response.RootElement.GetProperty("token").GetString().Should().NotBeNullOrEmpty();
         }
 
-        [Fact]
-        public async Task Error_Empty_Name()
+        [Theory]
+        [ClassData(typeof(CultureInlineDataTest))]
+        public async Task Error_Empty_Name(string cultureInfo)
         {
             var request = RequestRegisterUserJsonBuilder.Build();
             request.Name = string.Empty;
+
+            _httpClient.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue(cultureInfo));
 
             var result = await _httpClient.PostAsJsonAsync(METHOD, request);
 
@@ -52,7 +58,9 @@ namespace WebApi.Test.User.Register
 
             var errors = response.RootElement.GetProperty("errorMessages").EnumerateArray();
 
-            errors.Should().HaveCount(1).And.Contain(error => error.GetString()!.Equals(ResourceErrorMessages.NAME_REQUIRED));
+            var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("NAME_REQUIRED", new CultureInfo(cultureInfo));
+
+            errors.Should().HaveCount(1).And.Contain(error => error.GetString()!.Equals(expectedMessage));
         }
     }
 }

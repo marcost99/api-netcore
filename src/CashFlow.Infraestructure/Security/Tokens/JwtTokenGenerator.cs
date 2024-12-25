@@ -21,7 +21,8 @@ namespace CashFlow.Infraestructure.Security.Tokens
             // sets the claims (the infos of user)
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Sid, user.UserIdentifier.ToString())
+                new Claim(ClaimTypes.Sid, user.UserIdentifier.ToString()),
+                new Claim(ClaimTypes.Role, user.Role)
             };
 
             // sets the options of token

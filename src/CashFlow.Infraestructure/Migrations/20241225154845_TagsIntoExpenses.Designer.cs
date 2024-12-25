@@ -3,6 +3,7 @@ using System;
 using CashFlow.Infraestructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CashFlow.Infraestructure.Migrations
 {
     [DbContext(typeof(CashFlowDbContext))]
-    partial class CashFlowDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241225154845_TagsIntoExpenses")]
+    partial class TagsIntoExpenses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -64,7 +64,6 @@ C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\System.CodeDom.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\System.Text.Json.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Repos\CashFlow\src\CashFlow.Api\obj\Debug\net6.0\CashFlow.Api.csproj.CopyComplete
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\BCrypt.Net-Next.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
@@ -78,3 +77,4 @@ C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authent
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\appsettings.Test.json
+C:\Repos\CashFlow\src\CashFlow.Api\obj\Debug\net6.0\CashFlow.Api.csproj.CopyComplete

@@ -36,6 +36,9 @@ namespace CashFlow.Application.UseCases.Expenses.Update
                 throw new NotFoundException(ResourceErrorMessages.EXPENSE_NOT_FOUND);
             }
 
+            //remove the tags and inserts the tags of mapping later
+            entity.Tags.Clear();
+
             //update object entity with the datas of object request
             _mapper.Map(request, entity);
 

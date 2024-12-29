@@ -78,3 +78,8 @@ C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Prot
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\appsettings.Test.json
 C:\Repos\CashFlow\src\CashFlow.Api\obj\Debug\net6.0\CashFlow.Api.csproj.CopyComplete
+C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Repos\CashFlow\src\CashFlow.Api\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
